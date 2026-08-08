@@ -1,1 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Poppy Playtime Chapter 6 | Theory Hub</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #08090d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    background:
+        radial-gradient(circle at top, #421044 0%, #16091d 35%, #08090d 75%);
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #ff3c91;
+    border-radius: 30px;
+    color: #ff6aaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 9vw, 90px);
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-shadow: 0 0 25px #ff237d;
+}
+
+.hero h1 span {
+    color: #ff3c91;
+}
+
+.hero p {
+    margin: 25px auto;
+    max-width: 700px;
+    color: #c8c8d0;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    margin: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #ff287f;
+    color: white;
+    box-shadow: 0 0 20px #ff287f55;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px #ff287f99;
+}
+
+.secondary {
+    border: 1px solid #555;
+    color: white;
+}
+
+.secondary:hover {
+    background: #ffffff12;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #090a0eee;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ffffff12;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ff4b9a;
+}
+
+/* SECTIONS */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #999;
+}
+
+/* CARDS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(145deg, #151620, #0d0e13);
+    border: 1px solid #ffffff12;
+    border-radius: 14px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff3c9166;
+    box-shadow: 0 10px 35px #00000066;
+}
+
+.card-number {
+    color: #ff438f;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card h3 {
+    margin: 8px 0 12px;
+    font-size: 21px;
+}
+
+.card p {
+    color: #b5b5bf;
+    font-size: 15px;
+}
+
+/* DOSSIER */
+
+.dossier {
+    text-align: center;
+    background: linear-gradient(145deg, #19101c, #0d0e13);
+    border: 1px solid #ff3c9133;
+    border-radius: 18px;
+    padding: 50px 25px;
+}
+
+.dossier h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.dossier p {
+    color: #aaa;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+/* WARNING */
+
+.note {
+    margin-top: 35px;
+    padding: 20px;
+    border-left: 4px solid #ff3c91;
+    background: #ffffff08;
+    color: #aaa;
+}
+
+.note strong {
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 1px solid #ffffff12;
+    color: #777;
+    font-size: 14px;
+}
+
+footer span {
+    color: #ff3c91;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    nav a {
+        margin: 0 6px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            CHAPTER 6 • THEORY ARCHIVE
+        </div>
+
+        <h1>
+            POPPY PLAYTIME
+            <br>
+            <span>THEORY HUB</span>
+        </h1>
+
+        <p>
+            An ultimate collection of community fan theories,
+            predictions and AI analytical theories surrounding
+            Poppy Playtime Chapter 6.
+        </p>
+
+        <a href="#theories" class="button primary">
+            Explore Theories
+        </a>
+
+        <a href="chapter6-theories.pdf"
+           target="_blank"
+           class="button secondary">
+            📖 Read Full Dossier
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- NAV -->
+
+<nav>
+
+    <a href="#theories">Community</a>
+    <a href="#ai">AI Theories</a>
+    <a href="#dossier">Dossier</a>
+
+</nav>
+
+
+<!-- COMMUNITY THEORIES -->
+
+<section id="theories">
+
+    <div class="section-title">
+
+        <h2>🧠 Community Theories</h2>
+
+        <p>
+            Popular theories and predictions from the gaming community.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <div class="card-number">
+                THEORY 01
+            </div>
+
+            <h3>
+                The Prototype Amalgamation
+            </h3>
+
+            <p>
+                One major theory suggests that the Prototype
+                may have collected parts from previously defeated
+                monsters to construct an ultimate biological-mechanical
+                entity.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-number">
+                THEORY 02
+            </div>
+
+            <h3>
+                Poppy: The Mastermind?
+            </h3>
+
+            <p>
+                Could Poppy be manipulating the Player?
+                This theory suggests that she may have guided
+                the Player through the events of the previous chapters
+                for her own goal.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-number">
+                THEORY 03
+            </div>
+
+            <h3>
+                The Player's True Identity
+            </h3>
+
+            <p>
+                Some fan theories question the Player's identity
+                and suggest a possible connection to Playtime Co.'s
+                highest-level scientists.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- AI THEORIES -->
+
+<section id="ai">
+
+    <div class="section-title">
+
+        <h2>🤖 AI Analytical Theories</h2>
+
+        <p>
+            Speculative predictions and analytical ideas generated
+            for the Chapter 6 theory archive.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <div class="card-number">
+                AI THEORY 04
+            </div>
+
+            <h3>
+                Advanced GrabPack Combat
+            </h3>
+
+            <p>
+                Chapter 6 could potentially expand GrabPack mechanics
+                with combinations of different hands and new tools
+                during major encounters.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-number">
+                AI THEORY 05
+            </div>
+
+            <h3>
+                Hour of Joy Resolution
+            </h3>
+
+            <p>
+                One speculative idea is that the final conflict could
+                involve freeing the consciousnesses trapped within
+                the experiments.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-number">
+                AI THEORY 06
+            </div>
+
+            <h3>
+                Multiple Endings
+            </h3>
+
+            <p>
+                Another prediction suggests that Chapter 6 could
+                potentially introduce different outcomes depending
+                on the Player's choices.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="note">
+
+        <strong>⚠️ Theory Disclaimer:</strong>
+
+        These are fan theories, speculation and AI-generated
+        analytical predictions. They are not confirmed facts
+        or official information from Mob Entertainment.
+
+    </div>
+
+</section>
+
+
+<!-- DOSSIER -->
+
+<section id="dossier">
+
+    <div class="dossier">
+
+        <h2>📕 Ultimate Dossier</h2>
+
+        <p>
+            Want to read the complete collection?
+            Open the full Poppy Playtime Chapter 6 dossier
+            containing the detailed theories and predictions.
+        </p>
+
+        <a href="chapter6-theories.pdf"
+           target="_blank"
+           class="button primary">
+
+            📖 OPEN FULL PDF
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        Poppy Playtime Theory Hub
+    </p>
+
+    <p>
+        Fan-made website • <span>Not affiliated with Mob Entertainment</span>
+    </p>
+
+</footer>
+
+
+</body>
+  </html>
